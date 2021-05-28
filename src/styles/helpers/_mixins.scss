@@ -1,0 +1,34 @@
+@mixin typography($f-size:14pt, $f-family:$font-medium, $f-color:$d34){
+    font-size: $f-size;
+    font-family: $f-family;
+    color: $f-color;
+}
+@mixin button($width:150px, $height:40px, $bg-color:$l24, $color:$light,$border:transparent){
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    color: $color;
+    cursor: pointer;
+    border-radius: 3px;
+    border: $border;
+    font-family: $font-medium;
+    text-transform: capitalize;
+}
+@mixin mark-list($bg-color:transparent, $bord-btm-color:transparent, $marker:'') {
+    background-color: $bg-color;
+    border-bottom: 1px solid $bord-btm-color;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    &::before{
+        content:$marker;
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        color: $p1;
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 35%;
+    }
+
+}

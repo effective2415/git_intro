@@ -1,0 +1,140 @@
+footer{
+    background-color: $p1;
+    color: white;
+    padding: 20px 0 35px 0;
+    .logo{
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        img{
+            height: 60px;
+            margin-right: 5px;
+        }
+        p{
+            margin: 0;
+            &:first-of-type{
+            font-family: "Gabriola Regular";
+            font-size: 30px;
+            line-height: 20px;
+            span:first-of-type{
+                font-family: $font-bold;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: $p3;
+                }
+            span:last-of-type{
+                font-family: $font-regular;
+                font-size: 12px;
+            }
+            }
+            &:last-of-type{
+                font-family: $font-regular;
+                font-size: 12px;
+            }
+        }
+    }
+    .footer-menu{
+        display: flex;
+        align-items: flex-end;
+        ul li{
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 0 5px;
+            color:inherit;
+            text-transform: uppercase;
+            font-size: 12px;
+            &:last-child{
+                padding-right: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    .sect-numb{
+        padding: 55px 0;
+        margin: 35px 0;
+        border-top: 1px solid $l21;
+        border-bottom: 1px solid $l21;
+        h6{
+            font-family: $font-medium;
+            font-size: 16px;
+            color: inherit;
+        }
+        p{
+            font-family: $font-regular;
+            font-size: 13px;
+            line-height: 28px;
+        }
+    }
+    .contacts{
+        div:first-child{
+            font-size: $font-medium;
+            font-size: 13px;
+            width: 455px;
+            padding-bottom:15px;
+        }
+        div:nth-child(2){
+            padding-bottom:15px;
+            a{
+                margin: 0 5px;
+                text-decoration: none;
+                color: inherit;
+                border: 1px solid white;
+                padding: 10px;
+                border-radius: 50%;
+                &:first-child{
+                    padding: 10px 14px;
+                }
+            }
+            
+        }
+        .call-mail{
+            display: grid;
+            grid-template-columns: 30px 140px;
+            gap: 20px;
+            align-items: center;
+            padding-bottom:15px;
+            >div{
+                p{
+                    margin: 0;
+                    font-family: $font-medium;
+                    &:first-child{
+                        font-size: 13px;
+                    }
+                    &:last-child{
+                        font-size: 16px;
+                    }
+                }
+            }
+            &:last-of-type{
+                >div{
+                    p:last-child{
+                        font-size: 13px;
+                    }
+                }
+            }
+            
+        }
+    
+    }
+    @media screen and (max-width:992px){
+        .footer-menu{
+            ul li{
+                padding: 12px 15px;
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        .footer-menu{
+            ul li{
+                padding: 12px 0px;
+            }
+        }
+    }
+    @media screen and (max-width:530px){
+        .footer-menu{
+            ul li{
+                margin: 0 1px;
+            }
+        }
+    }
+}

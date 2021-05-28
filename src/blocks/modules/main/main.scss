@@ -1,0 +1,30 @@
+main{
+    margin-top: 55px;
+    h1{
+        font-family: $font-medium;
+        font-size: 33px;
+    }
+    >p{
+        font-family: $font-medium;
+        font-size: 20px;
+        color: $p4;
+    }
+    ul li{
+        @include mark-list ($l31, $marker:'\f055');
+        padding:20px 40px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        &:last-child{
+            @include mark-list ($marker:'\f056');
+            padding:20px 40px;
+            border: 2px solid $p1;
+            p:first-child{
+                color: $p1;
+                font-size: 15px;
+            }
+            p:last-child{
+                font-size: 14px;
+            }
+        }
+    }
+}
